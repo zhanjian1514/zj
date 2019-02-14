@@ -1,11 +1,10 @@
 // ToastExample.js
 
-'use strict';
 
-import React, {Component} from 'react';
-import {View, ScrollView, ActivityIndicator} from 'react-native';
+import React, { Component } from 'react';
+import { View, ScrollView, ActivityIndicator } from 'react-native';
 
-import {NavigationPage, ListRow, Toast, Theme} from 'teaset';
+import { NavigationPage, ListRow, Toast, Theme } from 'teaset';
 
 export default class ToastExample extends NavigationPage {
 
@@ -45,10 +44,10 @@ export default class ToastExample extends NavigationPage {
   }
 
   renderPage() {
-    let img = require('../images/faircup.jpg');
+    const img = require('../images/faircup.jpg');
     return (
-      <ScrollView style={{flex: 1}}>
-        <View style={{height: 20}} />
+      <ScrollView style={{ flex: 1 }}>
+        <View style={{ height: 20 }} />
         <ListRow title='Message' onPress={() => Toast.message('Toast message')} topSeparator='full' />
         <ListRow title='Success' onPress={() => Toast.success('Toast success')} />
         <ListRow title='Fail' onPress={() => Toast.fail('Toast fail')} />
@@ -56,9 +55,9 @@ export default class ToastExample extends NavigationPage {
         <ListRow title='Sad' onPress={() => Toast.sad('Toast sad')} />
         <ListRow title='Info' onPress={() => Toast.info('Toast info')} />
         <ListRow title='Stop' onPress={() => Toast.stop('Toast stop')} bottomSeparator='full' />
-        <View style={{height: 20}} />
+        <View style={{ height: 20 }} />
         <ListRow title='Modal' onPress={() => this.showModal()} topSeparator='full' bottomSeparator='full' />
-        <View style={{height: 20}} />
+        <View style={{ height: 20 }} />
         <ListRow title='Show custom' onPress={() => this.showCustom()} topSeparator='full' />
         <ListRow title='Hide custom' onPress={() => this.hideCustom()} bottomSeparator='full' />
       </ScrollView>
