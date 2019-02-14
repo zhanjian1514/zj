@@ -39,14 +39,16 @@ export default class ListRowExample extends NavigationPage {
         <ListRow title='Custom accessory' accessory={<Image source={require('../icons/location.png')} />} />
         <ListRow title='Press able' onPress={() => alert('Press!')} />
         <ListRow
-          title='Swipe able'
-          detail='Swipe to show action buttons'
+          // title='Swipe able'
+          // detail='Swipe to show action buttons'
           swipeActions={[
             <ListRow.SwipeActionButton title='Cancel' />,
             <ListRow.SwipeActionButton title='Remove' type='danger' onPress={() => alert('Remove')}/>,          
           ]}
           bottomSeparator='full'
-          />
+          >
+            <Text>sadasdsa</Text>
+          </ListRow>
       </ScrollView>
     );
   }

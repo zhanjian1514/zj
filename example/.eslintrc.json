@@ -1,0 +1,116 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "airbnb"
+  ],
+  "plugins": [
+    "react",
+    "jsx-a11y",
+    "import"
+  ],
+  "env": {
+    "node": true,
+    "es6": true,
+    "browser": true,
+    "commonjs": true
+  },
+  "globals": {
+    "__DEV__": true
+  },
+  "rules": {
+    "max-len": [
+      "error",
+      {
+        "code": 200
+      }
+    ],
+    "arrow-body-style": 0,
+    "linebreak-style": 0,
+    "no-plusplus": 0,
+    "no-unused-vars": [
+      1,
+      {
+        "vars": "all",
+        "args": "none"
+      }
+    ],
+    "no-undef": 0,
+    "no-unused-expressions": 1,
+    "import/no-named-as-default-member": 1,
+    "import/prefer-default-export": 1,
+    "no-console": 1,
+    "no-param-reassign": 1,
+    "no-use-before-define": 1,
+    "padded-blocks": [
+      2,
+      "never"
+    ],
+    "no-trailing-spaces": 1,
+    "prefer-const": 1,
+    "jsx-quotes": [
+      2,
+      "prefer-single"
+    ],
+    "react/no-string-refs": 0,
+    "react/prop-types": 0,
+    "react/no-unused-prop-types": 1,
+    "react/require-default-props": 0,
+    "react/sort-comp": [
+      2,
+      {
+        "order": [
+          "type-annotations",
+          "static-methods",
+          "lifecycle",
+          "everything-else",
+          "render-others",
+          "render"
+        ],
+        "groups": {
+          "render-others": [
+            "/^render.+$/"
+          ]
+        }
+      }
+    ],
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    ],
+    "no-underscore-dangle": "off",
+    "react/prefer-stateless-function": 0,
+    "import/extensions": [
+      2,
+      {
+        "ignore": [
+          "theme",
+          "api",
+          "env",
+          "navigator",
+          "localRequest",
+          "constants",
+          "components"
+        ]
+      }
+    ],
+    "import/no-unresolved": [
+      2,
+      {
+        "ignore": [
+          "theme",
+          "api",
+          "env",
+          "navigator",
+          "localRequest",
+          "constants",
+          "components"
+        ]
+      }
+    ]
+  }
+}
