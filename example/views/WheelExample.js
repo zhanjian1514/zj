@@ -51,9 +51,9 @@ export default class WheelExample extends NavigationPage {
 
   renderPage() {
     const { date } = this.state;
-    let year = date.getFullYear(), 
-month = date.getMonth(), 
-day = date.getDate();
+    let year = date.getFullYear(),
+      month = date.getMonth(),
+      day = date.getDate();
     const daysCount = this.daysCount[this.isLeapYear(year) ? 1 : 0][month];
     const days = [];
     for (let i = 1; i <= daysCount; ++i) days.push(i);

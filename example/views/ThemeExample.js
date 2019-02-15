@@ -2,10 +2,10 @@
 
 'use strict';
 
-import React, {Component} from 'react';
-import {View, ScrollView, ActivityIndicator} from 'react-native';
+import React, { Component } from 'react';
+import { View, ScrollView, ActivityIndicator } from 'react-native';
 
-import {Theme, NavigationPage, ListRow, PullPicker} from 'teaset';
+import { Theme, NavigationPage, ListRow, PullPicker } from 'teaset';
 
 export default class ThemeExample extends NavigationPage {
 
@@ -29,8 +29,8 @@ export default class ThemeExample extends NavigationPage {
 
   renderPage() {
     return (
-      <ScrollView style={{flex: 1}}>
-        <View style={{height: 20}} />
+      <ScrollView style={{ flex: 1 }}>
+        <View style={{ height: 20 }} />
         <ListRow title='Select theme' onPress={() => this.changeTheme()} topSeparator='full' bottomSeparator='full' />
       </ScrollView>
     );
